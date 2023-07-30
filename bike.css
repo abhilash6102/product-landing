@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@400;700&family=Open+Sans&family=Poppins:ital,wght@0,400;0,600;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:ital,wght@1,700&family=DM+Serif+Display:ital@0;1&family=PT+Serif:ital,wght@1,700&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,400;1,300;1,400&family=Yeseva+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(bike.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+    position:relative;
+    top: -30px;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar li a{
+   text-decoration: none;
+   color: rgb(228, 233, 237);
+   font-size: 17px;
+   font-family: 'poppins';
+}
+.navbar ul li::after{
+    content:'';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(179, 39, 39);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar ul li:hover::after{
+    transform: scaleX(1);
+}
+
+.menubar{
+    display: none;
+}
+.image{
+    width: 130px;
+    height: 120px;
+    border-radius: 50%;
+}
+.side-menu-wrap{
+    display: none;
+}
+.container-para p{ 
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Racing Sans One', cursive;
+}
+.container-para h1{
+    position:absolute;
+    left: 6%;
+    top:28%;
+    color: aliceblue;
+    font-size: 90px;
+    font-family: 'Racing Sans One', cursive;
+}
+.container-para h2{
+    position: absolute;
+    left: 6%;
+    top:40%;
+    color: aliceblue;
+    font-size: 85px;
+    font-family: 'Racing Sans One', cursive;
+}
+.container-para .square{
+    position: absolute;
+    left: 7.3%;
+    top:55%;
+    color: aliceblue;
+    font-size: 22px;
+    list-style-type: square;
+    font-family:'poppins';
+}
+.square li{
+    font-family:'poppins';
+}
+.container-para h3{
+    position:relative;
+    left: -8%;
+    font-family:'poppins';
+    font-size: 22px;
+}
+.btn{
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    padding: 10px 22px;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-right: 12px; 
+    color: aliceblue;
+    background-color:#de2121e0;
+    transition: transform 0.5s;
+
+}
+.btn:hover{
+    padding: 10px 22px;
+    background-color:#b92424e1;
+
+}
+.new-arrivals{
+    width: 100%;
+    line-height: 150px;
+
+}
+.new-arrivals p{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Racing Sans One', cursive;
+}
+.new-images{
+    width: 88%;
+    position: relative;
+    left: 6%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    column-gap: 13px;
+    flex-wrap: wrap;
+}
+.new-images img{
+    width:320px;
+    height: 250px;
+}
+.new-images .rating{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top:-35px;
+    left: -5px;
+}
+.new-images p{
+    color: #292828d6;
+    font-family: 'Poppins';
+}
+.new-images h1{
+    color: rgb(19, 18, 18);
+    font-family: 'Racing Sans One', cursive;
+    position: relative;
+    font-size: 25px;
+    top:-5px;
+}
+.new-images h2{
+    color: rgb(19, 19, 19);
+    font-family: 'Poppins';
+    position: relative;
+    top:-65px;
+    font-size: 18px;
+}
+.choose{
+    width: 100%;
+    height: 160px;
+}
+.choose p{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Racing Sans One', cursive;
+}
+.con-img1 p{
+    font-size: 23px;
+}
+.con-img2 p{
+    font-size: 23px;
+}
+.con-img3 p{
+    font-size: 23px;
+}
+.con-img4 p{
+    font-size: 23px;
+}
+.con-img1{
+    width: 550px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%),url(img1.jpg);
+    background-position:center;
+    background-size:450px;
+    background-repeat: no-repeat;
+}
+.con-img2{
+    width: 550px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%),url(img2.jpg);
+    background-position:center;
+    background-size:450px;
+    background-repeat: no-repeat;
+}
+.con-img3{
+    width:550px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%),url(img3.jpg);
+    background-position:center;
+    background-size:450px;
+    background-repeat: no-repeat;
+}
+.con-img4{
+    width: 550px;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%),url(img4.jpg);
+    background-position:center;
+    background-size:450px;
+    background-repeat: no-repeat;
+}
+.choose-img{
+    width: 75%;
+    position: relative;
+    left:12%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    row-gap: 23px;
+    flex-wrap: wrap;
+}
+.choose-img p{
+    font-family: 'Racing Sans One', cursive;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 225px;
+    left:60px;
+    font-size: 23px;
+}
+.choose-img h2{
+    width: 90%;
+    font-family:'poppins';
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    position: relative;
+    top: 230px;
+    left: 60px;
+}
+.con-img2 p{
+    position: relative;
+    top: 250px;
+    font-size:20px ;
+}
+.con-img3 p{
+    position: relative;
+    top: 250px;
+    font-size:20px ;
+}
+.con-img4 p{
+    position: relative;
+    top: 250px;
+    font-size:20px ;
+}
+.container-shop{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 40px;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(Scram\ 411.jpg);
+    background-position:center;
+    background-size:95%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-shop p{
+    text-align: center;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 40px;
+    color: rgb(247, 247, 247);
+    padding-top: 270px;
+}
+.container-shop h1{
+    text-align: center;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    padding-top:20px;
+}
+.container-shop button{
+    position:relative;
+    left: 45%;
+    top: 30px;
+}
+.footer{
+    display: flex;
+    align-items: top;
+    justify-content:center;
+    position:relative;
+    top:480%;
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(39, 37, 37);
+    }
+    .footer div{
+    margin: 10px;
+    }
+    .footer img{
+    width: 22px;
+    height: 22px;
+    }
+    footer{
+    position: absolute;
+    top: 60%;
+    font-size: 13px;
+    color:white;
+    font-family:'poppins';
+    }
+@media screen and (max-width: 900px) {
+    .container{
+        background-position:54%;
+    }
+}
+@media screen and (max-width: 725px) {
+    .navbar ul li{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(bike.jpg);
+        background-position:58%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .image{
+        width: 100px;
+    height: 90px;
+    border-radius: 50%;
+       position: relative;
+       left: 5%;
+    }
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menubar{
+        display:block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+       right:3%; 
+       cursor: pointer;
+    }
+    .side-menu-wrap{
+        display: block;
+        position: absolute;
+        top: 0%;
+        right:0px;
+        width:0px;
+       z-index: 2;
+       overflow: hidden;
+    }
+    .side-menu{
+        background: #ffffff;
+        padding:70px 20px;
+    }
+    .sidebar-info{
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .sidebar-info a{
+       
+        text-decoration: none;
+         font-weight: 400;
+         font-size: 17px;
+         color: #0000009c;
+         font-family: 'Poppins';
+         transition: transform 0.5s;
+    }
+    .sidebar-info:hover a{
+        font-weight: 800;
+    }
+    .close-bar{
+        display: block;
+       width: 20px;
+       position:absolute;
+       top: 45px;
+       left: 15px;
+       cursor: pointer;
+    }
+    .container-para p{ 
+        position: absolute;
+        left: 10%;
+        top: 27%;
+        color: aliceblue;
+        font-size: 22px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .container-para h1{
+        position:absolute;
+        left: 10%;
+        top:29%;
+        color: aliceblue;
+        font-size: 60px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .container-para h2{
+        position: absolute;
+        left: 10%;
+        top:37%;
+        color: aliceblue;
+        font-size: 50px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .container-para .square{
+        position: absolute;
+        left: 15%;
+        top:47%;
+        
+        color: aliceblue;
+        font-size: 17px;
+        list-style-type: square;
+        font-family: 'poppins';
+    }
+    .square li{
+        font-family:'poppins';
+    }
+    .container-para h3{
+        position:relative;
+        left: -8%;
+        font-family:'poppins';
+        font-size: 17px;
+    }
+    .btn{
+        position: absolute;
+        top: 62%;
+        left: 10%;
+        padding: 7px 22px;
+        font-size: 17px;
+        border: none;
+        border-radius: 7px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-right: 12px; 
+        color: aliceblue;
+        background-color:#e23030d6;
+    
+    }
+    .btn:hover{
+        padding: 7px 22px;
+        background-color:#dd1f1fd6;
+    }
+    .new-arrivals{
+        width: 100%;
+        line-height: 150px;
+    
+    }
+    .new-arrivals p{
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .new-images{
+        display:block;
+         width: 80%;
+    position: relative;
+    left: 10%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    column-gap: 13px;
+    flex-wrap: wrap;
+    }
+    .new-images img{
+        width:330px;
+        height: 250px;
+    }
+    .new-images .rating{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top:-35px;
+        left: -5px;
+    }
+    .new-images p{
+        color: #292828d6;
+        font-family: 'Poppins';
+    }
+    .new-images h1{
+        color: rgb(19, 18, 18);
+        font-family: 'Racing Sans One', cursive;
+        position: relative;
+        font-size: 25px;
+        top:-5px;
+    }
+    .new-images h2{
+        color: rgb(19, 19, 19);
+        font-family: 'Poppins';
+        position: relative;
+        top:-65px;
+        font-size: 18px;
+    }
+    .choose p{
+        width: 85%;
+        position: absolute;
+        left: 6%;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Racing Sans One', cursive;
+    }
+    .con-img1{
+        width: 330px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(img1.jpg);
+        background-position:center;
+        background-size:450px;
+        background-repeat: no-repeat;
+    }
+    .con-img2{
+        width: 330px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(img2.jpg);
+        background-position:center;
+        background-size:450px;
+        background-repeat: no-repeat;
+    }
+    .con-img3{
+        width: 330px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(img3.jpg);
+        background-position:center;
+        background-size:450px;
+        background-repeat: no-repeat;
+    }
+    .con-img4{
+        width: 330px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(img4.jpg);
+        background-position:center;
+        background-size:450px;
+        background-repeat: no-repeat;
+    }
+    .choose-img{
+        width: 80%;
+    position: relative;
+    left:10%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    row-gap: 23px;
+    flex-wrap: wrap;
+    }
+    .choose-img p{
+        font-family: 'Racing Sans One', cursive;
+        color: rgb(255, 255, 255);
+        position: relative;
+        top: 225px;
+        left: 10px;
+    }
+    .choose-img h2{
+        width: 90%;
+        font-family:'poppins';
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+        position: relative;
+        top: 230px;
+        left: 10px;
+    }
+    .con-img2 p{
+        position: relative;
+        top: 250px;
+        left: 10px;
+        font-size:20px ;
+    }
+    .con-img3 p{
+        position: relative;
+        top: 250px;
+        left: 10px;
+        font-size:20px ;
+    }
+    .con-img4 p{
+        position: relative;
+        top: 250px;
+        left: 10px;
+        font-size:20px ;
+    }
+    .container-shop{
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 40px;
+        background-image: linear-gradient(rgba(0,0,0,0.65)50%,rgba(0,0,0,0.65)50%),url(Scram\ 411.jpg);
+        background-position:71%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .container-shop p{
+        text-align: center;
+        font-family: 'Racing Sans One', cursive;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        padding-top: 270px;
+    }
+    .container-shop h1{
+        text-align: center;
+        font-family: 'Racing Sans One', cursive;
+        font-size:40px;
+        color: rgb(255, 255, 255);
+        padding-top:20px;
+    }
+    .container-shop button{
+        position:relative;
+        left: 30%;
+        top: 30px;
+    }
+    .footer{
+        display: flex;
+        align-items: top;
+        justify-content:center;
+        position:relative;
+        top:480%;
+        width: 100vw;
+        height: 80px;
+        background-color: rgb(39, 37, 37);
+        }
+        .footer div{
+        margin: 10px;
+        }
+        .footer img{
+        width: 20px;
+        height: 20px;
+        
+        }
+        footer{
+        position: absolute;
+        top: 60%;
+        font-size: 13px;
+        color:white;
+        font-family:'poppins';
+        }
+}
